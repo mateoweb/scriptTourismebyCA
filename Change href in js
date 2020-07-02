@@ -1,0 +1,1 @@
+document.querySelector('.settings>a').href="https://tourismebyca.fr/dashboard/settings/payment/"
