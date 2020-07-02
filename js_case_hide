@@ -1,0 +1,50 @@
+
+switch (window.location.pathname) {
+  	case '/dashboard/': 
+    document.querySelector(".dashboard-widget.orders").style.display="none";
+    document.querySelector(".list-unstyled.list-count").style.display="none";
+    document.querySelector(".dokan-panel.dokan-panel-default.dokan-profile-completeness").style.display="none";
+    document.querySelector(".dashboard-widget.big-counter").style.display="none";
+    document.querySelector(".dashboard-widget.reviews").style.display="none";
+    document.querySelector(".dashboard-widget.sells-graph").style.display="none";
+    document.querySelector(".dashboard-widget.dokan-announcement-widget").style.display="none";
+    document.querySelector(".orders").style.display="none";
+    document.querySelector(".reviews").style.display="none";
+    document.querySelector(".coupons").style.display="none";
+    document.querySelector(".reports").style.display="none";
+    document.querySelector(".followers").style.display="none";
+    document.querySelector(".tools").style.display="none";
+    
+	case '/dashboard/products/':
+    case '/dashboard/burned-codes/': 
+    case '/dashboard/withdraw/':
+    case '/dashboard/earn-burn/': 
+    document.querySelector(".orders").style.display="none";
+    document.querySelector(".reviews").style.display="none";
+    document.querySelector(".coupons").style.display="none";
+    document.querySelector(".reports").style.display="none";
+    document.querySelector(".followers").style.display="none";
+    document.querySelector(".tools").style.display="none";
+   
+  	case '/dashboard/settings/store/':
+    document.querySelector(".dokan-dashboard-header").style.display="none";
+    document.querySelector(".dokan-panel.dokan-panel-default.dokan-profile-completeness").style.display="none";
+    document.querySelector(".dokan-gravatar").parentElement.style.display="none";
+    document.querySelector(".dokan-address-fields").parentElement.style.display="none"
+    document.getElementById('wp-vendor_biography-wrap').parentElement.parentElement.style.display="none";
+    document.getElementById('setting_phone').parentElement.parentElement.style.display="none";
+    document.getElementById('dokan_store_ppp').parentElement.parentElement.style.display="none";
+    document.querySelectorAll('.checkbox').forEach((el)=>{
+      el.parentElement.parentElement.style.display="none";
+  })
+    document.getElementById('dokan-seller-vacation-settings').style.display="none";
+    document.querySelector(".dokan-banner").style.display="none";
+    document.querySelector(".dokan-banner").style.display="none";
+    document.querySelector(".payment").style.display="none";
+    document.querySelector(".seo").style.display="none";
+    document.querySelector(".social").style.display="none";
+    document.querySelector(".shipping").style.display="none";
+    document.getElementById('dokan-seller-vacation-settings').style.display="none";
+ break;
+}
+
